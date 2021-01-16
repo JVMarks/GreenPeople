@@ -1,0 +1,61 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, button, input {
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 668px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+:root {
+    --color-primary: #fff;
+    --color-secondary: #317AD8;
+    --color-quaternary: #24272E;
+    --color-blue: #0061ff;
+    --color-border: #bdc4c9;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #d4d700;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4a900;
+    border-radius: 5px;
+}

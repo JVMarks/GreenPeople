@@ -1,0 +1,129 @@
+﻿@model IList<Green_People.Entidades.Produto>
+
+<link rel="stylesheet" href="~/Content/produto.css" />
+<div class="container">
+
+    
+    <ul class="card-list">
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img5.jpg);" data-image-full="../../assets/img/img5.jpg">
+                <img src="~/assets/img/img5.jpg" alt="suco de limão" />
+            </a>
+            <div class="card-description">
+                <h2>Juice Style</h2>
+                <h2>R$ 32,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img4.jpg);" data-image-full="../../assets/img/img4.jpg">
+                <img src="~/assets/img/img4.jpg" alt="suco de limão" />
+            </a>
+            <div class="card-description">
+                <h2>Green Style</h2>
+                <h2>R$ 26,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img2.jpg);" data-image-full="../../assets/img/img2.jpg">
+                <img src="~/assets/img/img2.jpg" alt="Uva cara" />
+            </a>
+            <div class="card-description">
+                <h2>Ruby Roman</h2>
+                <h2>R$ 42,00</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img3.jpg);" data-image-full="../../assets/img/img3.jpg">
+                <img src="~/assets/img/img3.jpg" alt="suco de maça verde" />
+            </a>
+            <div class="card-description">
+                <h2>Green Apple</h2>
+                <h2>R$ 39,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img5.jpg);" data-image-full="../../assets/img/img5.jpg">
+                <img src="~/assets/img/img5.jpg" alt="suco de limão" />
+            </a>
+            <div class="card-description">
+                <h2>Juice Style</h2>
+                <h2>R$ 32,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img4.jpg);" data-image-full="../../assets/img/img4.jpg">
+                <img src="~/assets/img/img4.jpg" alt="suco de limão" />
+            </a>
+            <div class="card-description">
+                <h2>Green Style</h2>
+                <h2>R$ 26,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img2.jpg);" data-image-full="../../assets/img/img2.jpg">
+                <img src="~/assets/img/img2.jpg" alt="Uva cara" />
+            </a>
+            <div class="card-description">
+                <h2>Ruby Roman</h2>
+                <h2>R$ 42,00</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img3.jpg);" data-image-full="../../assets/img/img3.jpg">
+                <img src="~/assets/img/img3.jpg" alt="suco de maça verde" />
+            </a>
+            <div class="card-description">
+                <h2>Green Apple</h2>
+                <h2>R$ 39,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img4.jpg);" data-image-full="../../assets/img/img4.jpg">
+                <img src="~/assets/img/img4.jpg" alt="suco de limão" />
+            </a>
+            <div class="card-description">
+                <h2>Green Style</h2>
+                <h2>R$ 26,99</h2>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-image" href="#" style="background-image: url(../../assets/img/img2.jpg);" data-image-full="../../assets/img/img2.jpg">
+                <img src="~/assets/img/img2.jpg" alt="Uva cara" />
+            </a>
+            <div class="card-description">
+                <h2>Ruby Roman</h2>
+                <h2>R$ 42,00</h2>
+            </div>
+        </li>
+    </ul>
+
+    <h2 class="prodtitulo">TABELA DE PRODUTOS</h2>
+    <table class="rwd-table">
+        <thead>
+            <tr>
+                <th>CODIGO</th>
+                <th>NOME</th>
+                <th>EMBALAGEM</th>
+                <th>TAMANHO</th>
+                <th>SABOR</th>
+                <th>PREÇO</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var produto in Model)
+            {
+                <tr>
+                    <td>@produto.codigo_do_produto</td>
+                    <td>@produto.nome_do_Produto</td>
+                    <td>@produto.embalagem</td>
+                    <td>@produto.tamanho</td>
+                    <td>@produto.sabor</td>
+                    <td>R$ @produto.preco</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="btn-add">
+        @Html.ActionLink("Adicionar Novo produto", "Form", null, new { style = "text-decoration:none", @class = "addProduto" })
+    </div>
+</div>

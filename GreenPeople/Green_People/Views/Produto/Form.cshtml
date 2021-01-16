@@ -1,0 +1,46 @@
+﻿@model Green_People.Entidades.Produto
+
+<link rel="stylesheet" href="~/Content/produto.css" />
+
+<div class="container">
+    <section class="section_container">
+        <section class="section_container2">
+            <section class="info_title">
+                <span></span>
+                <h2>CRIE UM NOVO<br>PRODUTO</h2>
+            </section>
+        </section>
+
+        @using (Html.BeginForm("Adiciona", "Produto", FormMethod.Post, new { @class = "form" }))
+        {
+            <h3 class="title_form">Adicione um novo produto</h3>
+            <div class="form_direction">
+                @Html.LabelFor(u => u.codigo_do_produto, "Digite o codigo do Produto:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.codigo_do_produto, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.codigo_do_produto)
+
+                @Html.LabelFor(u => u.nome_do_Produto, "Digite o nome do produto:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.nome_do_Produto, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.nome_do_Produto)
+
+                @Html.LabelFor(u => u.embalagem, "Tipo de embalagem:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.embalagem, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.embalagem)
+
+                @Html.LabelFor(u => u.tamanho, "Tamanho do produto:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.tamanho, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.tamanho)
+
+                @Html.LabelFor(u => u.sabor, "Sabor do produto:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.sabor, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.sabor)
+
+                @Html.LabelFor(u => u.preco, "Preço do produto:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.preco, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.preco)
+
+                <input type="submit" value="Cadastrar" class="form-btn" />
+            </div>
+        }
+    </section>
+</div>
