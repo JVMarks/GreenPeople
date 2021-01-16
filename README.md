@@ -3,7 +3,9 @@
 </h1>
 <p align="center">
 <hr>
+
 ## Techs
+
 - [x] ASP.NET MVC5<br>
 - [x] Entity Framework<br>
 
