@@ -19,11 +19,13 @@ namespace Green_People.Controllers
             this.produtosDAO = produtosDAO;
         }
 
+        [Authorize]
         public ActionResult Form()
         {
             return View();
         }
 
+        [Authorize]
         public ActionResult Adiciona(Produto produto)
         {
             if (ModelState.IsValid)

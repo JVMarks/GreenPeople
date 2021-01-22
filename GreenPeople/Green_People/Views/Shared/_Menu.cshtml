@@ -12,9 +12,20 @@
             <li class="link">
                 @Html.ActionLink("Adicionar", "Form", "Produto", null, new { style = "text-decoration:none" })
             </li>
-            <li class="link">
-                @Html.ActionLink("Blog", "Index", "blog", new { style = "text-decoration:none" })
-            </li>
+
+            <!--if(WebSecurity.IsAuthenticated)-->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="link">
+                    @Html.ActionLink("Logout", "Logout", "Login", null, new { style = "text-decoration:none" })
+                </li>
+            }
+            else
+            {
+                <li class="link">
+                    @Html.ActionLink("Login", "Index", "Login", null, new { style = "text-decoration:none" })
+                </li>
+            }
         </ul>
     </nav>
 </header>

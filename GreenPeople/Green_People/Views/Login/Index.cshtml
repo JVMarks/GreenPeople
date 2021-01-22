@@ -1,0 +1,29 @@
+﻿
+<link rel="stylesheet" href="~/Content/login.css" />
+<div class="container">
+    <section class="section_container">
+        <section class="section_container2">
+            <section class="info_title">
+                <span></span>
+                <h2>Greenpeople cuidando do seu<br>BEM ESTAR</h2>
+            </section>
+        </section>
+        <form action="@Url.Action("Autentica")" method="post" class="form">
+            <div class="form_direction">
+            <h3 class="title_form">Faça seu Login e veja as novidades</h3>
+                @Html.ValidationMessage("login.Invalido")
+                <label for="login" class="formlabel">Nome do usuario:</label>
+                <input id="login" name="login" type="text" class="form-control" />
+
+                <label for="senha" class="formlabel">Senha:</label>
+                <input id="senha" name="senha" type="password" class="form-control" />
+
+                <input type="submit" value="Entrar" class="form-btn" />
+            </div>
+        </form>
+    </section>
+
+    <div class="btn-add">
+        @Html.ActionLink("Crie já sua conta", "Cadastro", "Usuario", null, new { style = "text-decoration:none", @class = "addProduto" })
+    </div>
+</div>

@@ -1,0 +1,78 @@
+﻿@model Green_People.Models.UsuarioModel
+
+<link rel="stylesheet" href="~/Content/usuario.css" />
+
+<div class="container">
+    <section class="section_container">
+        <section class="section_container2">
+            <section class="info_title">
+                <span></span>
+                <h2>Faça parte do grupo<br>Greenpeople</h2>
+            </section>
+        </section>
+        @using (Html.BeginForm("Adiciona", "Usuario", FormMethod.Post, new { @class = "form" }))
+        {
+            @Html.ValidationMessage("usuario.Invalido")
+            <h3 class="title_form">CADASTRE UMA NOVA CONTA LOGO ABAIXO</h3>
+            <div class="form_direction">
+                @Html.LabelFor(u => u.Nome, "Digite o Nome de usuario:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Nome, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Nome)
+
+                @Html.LabelFor(u => u.CPF, "Digite o CPF:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.CPF, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.CPF)
+
+                @Html.LabelFor(u => u.Idade, "Digite sua Idade:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Idade, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Idade)
+
+                @Html.LabelFor(u => u.Data_de_nacimento, "Data de nacimento:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Data_de_nacimento, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Data_de_nacimento)
+
+                @Html.LabelFor(u => u.Endereco1, "Digite Endereço:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Endereco1, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Endereco1)
+
+                @Html.LabelFor(u => u.Bairro, "Digite Biarro:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Bairro, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Bairro)
+
+                @Html.LabelFor(u => u.Cidade, "Digite Cidade:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Cidade, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Cidade)
+
+                @Html.LabelFor(u => u.Estado, "Digite Estado:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Estado, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Estado)
+
+                @Html.LabelFor(u => u.CEP, "Digite CEP:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.CEP, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.CEP)
+
+                @Html.LabelFor(u => u.Limite_de_cretido, "Cretido:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Limite_de_cretido, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Limite_de_cretido)
+
+                @Html.LabelFor(u => u.Volume_da_compra, "Compra:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Volume_da_compra, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Volume_da_compra)
+
+                @Html.LabelFor(u => u.Primeira_compra, "Primeira compra:", new { @class = "formlabel" })
+                @Html.TextBoxFor(u => u.Primeira_compra, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Primeira_compra)
+
+                @Html.LabelFor(u => u.Senha, "Digite sua senha:", new { @class = "formlabel" })
+                @Html.PasswordFor(u => u.Senha, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.Senha)
+
+                @Html.LabelFor(u => u.ConfirmarSenha, "Confirme sua senha:", new { @class = "formlabel" })
+                @Html.PasswordFor(u => u.ConfirmarSenha, new { @class = "form-control" })
+                @Html.ValidationMessageFor(u => u.ConfirmarSenha)
+
+                <input type="submit" value="Cadastrar" class="form-btn" />
+            </div>
+        }
+    </section>
+</div>

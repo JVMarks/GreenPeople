@@ -106,3 +106,7 @@ D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\WebActivatorEx.dll
 D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\Ninject.xml
 D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\Ninject.Web.Common.xml
 D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\Ninject.Web.Mvc.xml
+D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\WebMatrix.Data.dll
+D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\WebMatrix.WebData.dll
+D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\WebMatrix.Data.xml
+D:\trabalho\Projetos_semana\GreenPeople\Green_People\bin\WebMatrix.WebData.xml

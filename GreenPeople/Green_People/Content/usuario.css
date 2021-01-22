@@ -1,0 +1,22 @@
+﻿.section_container2::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4091EC;
+    opacity: 0.2;
+}
+
+.section_container2 {
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/img/img15.jpg');
+    background-size: cover;
+    background-position: center center;
+}
