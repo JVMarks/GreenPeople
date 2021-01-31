@@ -11,6 +11,9 @@ using System.Web.Security;
 
 namespace Green_People.Controllers
 {
+    //fiz o uso de set  alterar e do get método que devolve
+    //uso de objetos privados como o UsuarioDAO 
+    // prop + tab, ctrl + d + k 
     public class UsuarioController : Controller
     {
         // GET: Usuario
@@ -25,6 +28,8 @@ namespace Green_People.Controllers
             return View();
         }
 
+        // Conseuitos utilizados do modulo 1 do cruso da alura C# 
+        // utulizado do 
         public ActionResult Adiciona(UsuarioModel model)
         {
             if (ModelState.IsValid)
@@ -53,13 +58,7 @@ namespace Green_People.Controllers
                         model.Senha,
                         new
                         {
-                            Idade = model.Idade,
-                            CPF = model.CPF,
-                            Endereco1 = model.Endereco1,
-                            Bairro = model.Bairro,
-                            Cidade = model.Cidade,
-                            Estado = model.Estado,
-                            CEP = model.CEP,
+                            CPF = model.CPF,                         
                             Data_de_nacimento = model.Data_de_nacimento,
                             Limite_de_cretido = model.Limite_de_cretido,
                             Volume_da_compra = model.Volume_da_compra,

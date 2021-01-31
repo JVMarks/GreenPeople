@@ -8,6 +8,12 @@ using System.Web.Mvc;
 
 namespace Green_People.Controllers
 {
+    // c# parte 1 if  else, c parte 2 uso de classes de objetos e do this
+    //A palavra-chave this refere-se à instância atual da classe e também 
+    //é usada como um modificador do primeiro parâmetro de um método de extensão.
+    //DENTRO DA CONTROLER FIZ O USO DE CONDIÇÕES COM 
+    // IFF E ELSE PARA REALIZAR O CADASTRO DE UM NOVO PRODUTO E VERIFICAÇÃO JUNTO COM
+    // ModelState
     public class ProdutoController : Controller
     {
         //codigo da regra de negocio

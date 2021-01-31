@@ -23,39 +23,15 @@
                 @Html.TextBoxFor(u => u.CPF, new { @class = "form-control" })
                 @Html.ValidationMessageFor(u => u.CPF)
 
-                @Html.LabelFor(u => u.Idade, "Digite sua Idade:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.Idade, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Idade)
-
                 @Html.LabelFor(u => u.Data_de_nacimento, "Data de nacimento:", new { @class = "formlabel" })
                 @Html.TextBoxFor(u => u.Data_de_nacimento, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Data_de_nacimento)
+                @Html.ValidationMessageFor(u => u.Data_de_nacimento)         
 
-                @Html.LabelFor(u => u.Endereco1, "Digite Endereço:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.Endereco1, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Endereco1)
-
-                @Html.LabelFor(u => u.Bairro, "Digite Biarro:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.Bairro, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Bairro)
-
-                @Html.LabelFor(u => u.Cidade, "Digite Cidade:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.Cidade, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Cidade)
-
-                @Html.LabelFor(u => u.Estado, "Digite Estado:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.Estado, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.Estado)
-
-                @Html.LabelFor(u => u.CEP, "Digite CEP:", new { @class = "formlabel" })
-                @Html.TextBoxFor(u => u.CEP, new { @class = "form-control" })
-                @Html.ValidationMessageFor(u => u.CEP)
-
-                @Html.LabelFor(u => u.Limite_de_cretido, "Cretido:", new { @class = "formlabel" })
+                @Html.LabelFor(u => u.Limite_de_cretido, "Quando de credito está disposto:", new { @class = "formlabel" })
                 @Html.TextBoxFor(u => u.Limite_de_cretido, new { @class = "form-control" })
                 @Html.ValidationMessageFor(u => u.Limite_de_cretido)
 
-                @Html.LabelFor(u => u.Volume_da_compra, "Compra:", new { @class = "formlabel" })
+                @Html.LabelFor(u => u.Volume_da_compra, "Valor experado de compra:", new { @class = "formlabel" })
                 @Html.TextBoxFor(u => u.Volume_da_compra, new { @class = "form-control" })
                 @Html.ValidationMessageFor(u => u.Volume_da_compra)
 

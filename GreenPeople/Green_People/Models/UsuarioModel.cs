@@ -20,27 +20,22 @@ namespace Green_People.Models
         [Required]
         public string CPF { get; set; }
 
-        [Required]
         public string Endereco1 { get; set; }
 
         public string Endereco2 { get; set; }
 
-        [Required]
         public string Bairro { get; set; }
 
-        [Required]
         public string Cidade { get; set; }
 
-        [Required]
         public string Estado { get; set; }
 
-        [Required]
         public int CEP { get; set; }
 
         [Required]
         public DateTime Data_de_nacimento { get; set; }
 
-        [Required]
+
         public int Idade { get; set; }
 
         public string Sexo { get; set; }
